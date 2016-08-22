@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F1738B1639C637655E123147F105319 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B96E3A3F7481C2D06BD7BE5150B922C /* ReplaceMe.m */; };
+		3828D3F6ADFDD4C9E04CA322C0734A29 /* IMLocalizeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 549D44C2084F2679D515E85FF2CE06A6 /* IMLocalizeManager.m */; };
+		3A1FCD69FF40E0B7576A25E3A3A3E104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		4135569F5D6D2F801DBD5154E988EC57 /* IMLocalize-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D021C43E22B6B23D52C04784A35D2CAC /* IMLocalize-dummy.m */; };
 		4EE3EFAAB10EB6661C3A9A3FD3D2BEF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		723DC7744334C688DEE58FAAABEAE368 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		7CC9A2DF662A71D1EA09011065B37B49 /* IMLocalize-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67E48046830214B22E1DDF8EF45D837B /* IMLocalize-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7284BB9DF16F55EF401C9C349F5C05D1 /* IMLocalize-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67E48046830214B22E1DDF8EF45D837B /* IMLocalize-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B556FE4EC581D364C4CDC10F0E1001F /* Pods-IMLocalize_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D2810D76EE7B62B081F1C935AF9FFD9 /* Pods-IMLocalize_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EC126039AA0DE638511EB0104A2DEDB /* Pods-IMLocalize_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A71EE7D3D9A78B5060170CE7FA08B86 /* Pods-IMLocalize_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F22C3A5BB8CA296D563B5B558C675DD /* IMLocalize-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D021C43E22B6B23D52C04784A35D2CAC /* IMLocalize-dummy.m */; };
+		9153D79A5EEAB59F0306872396BA3419 /* IMLocalizeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2A74E3792E34A1C0198B4C35DA170FB /* IMLocalizeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1098A594964B7FAF349AEB24653DFFB /* IMLocalize.h in Headers */ = {isa = PBXBuildFile; fileRef = DF11AFAEA41383AE489B3F96BF23E40E /* IMLocalize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D60A31BDEA9E7D0C75F92A89FC5D5AD9 /* Pods-IMLocalize_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B010D0271D82873E500C331755DB75B7 /* Pods-IMLocalize_Example-dummy.m */; };
 		EBAF75F765D4F54181A7E423BFFC89A6 /* Pods-IMLocalize_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1F7CA09E228257238633669417F5C /* Pods-IMLocalize_Tests-dummy.m */; };
 		F38DC29B9EE378367173FF437D86138B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
@@ -24,7 +26,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C3CA19525025F9D69ACF829AC0ADACB8;
+			remoteGlobalIDString = B17CD2D6AA8C6207A8409EDA11B7A3FB;
 			remoteInfo = IMLocalize;
 		};
 /* End PBXContainerItemProxy section */
@@ -34,11 +36,11 @@
 		0B0A669C479A41CF62761879B5F3FF10 /* Pods-IMLocalize_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMLocalize_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0DE31376B6DEE9C8E721B50F999E31E3 /* Pods-IMLocalize_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMLocalize_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		28DD840B7F9EA037F3A6C7D81CE6D546 /* Pods-IMLocalize_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMLocalize_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2B96E3A3F7481C2D06BD7BE5150B922C /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		2C3D4B8F5F6E50DB2F0AC6B811EE867B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C278AFB757F014A7982ECD5979AEAF1 /* Pods-IMLocalize_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-IMLocalize_Example.modulemap"; sourceTree = "<group>"; };
 		3C6186ADCD9F177FFB26E8870A20E47D /* Pods-IMLocalize_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMLocalize_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4CB1F7CA09E228257238633669417F5C /* Pods-IMLocalize_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMLocalize_Tests-dummy.m"; sourceTree = "<group>"; };
+		549D44C2084F2679D515E85FF2CE06A6 /* IMLocalizeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IMLocalizeManager.m; sourceTree = "<group>"; };
 		5A71EE7D3D9A78B5060170CE7FA08B86 /* Pods-IMLocalize_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IMLocalize_Example-umbrella.h"; sourceTree = "<group>"; };
 		67E48046830214B22E1DDF8EF45D837B /* IMLocalize-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMLocalize-umbrella.h"; sourceTree = "<group>"; };
 		6D0A7EDA313A77D023D52BCDA187DD28 /* Pods-IMLocalize_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMLocalize_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		B010D0271D82873E500C331755DB75B7 /* Pods-IMLocalize_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMLocalize_Example-dummy.m"; sourceTree = "<group>"; };
 		B1A702CD241E1CE41AB6765CB1A625E2 /* Pods-IMLocalize_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMLocalize_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BBA678568FCBB47133C8947E62C1F19E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2A74E3792E34A1C0198B4C35DA170FB /* IMLocalizeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMLocalizeManager.h; sourceTree = "<group>"; };
 		C69F9232BEE0ACEC98B1D368B7774B40 /* IMLocalize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IMLocalize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8AE4868F4EA1711B6F8EDC352957838 /* Pods-IMLocalize_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMLocalize_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,12 +62,21 @@
 		D021C43E22B6B23D52C04784A35D2CAC /* IMLocalize-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IMLocalize-dummy.m"; sourceTree = "<group>"; };
 		D4F3F1A00EE60E674C8BE9049CBF9954 /* Pods-IMLocalize_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMLocalize_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D9230725EDBEB43DC1E849F8923A04BE /* Pods-IMLocalize_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMLocalize_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		DF11AFAEA41383AE489B3F96BF23E40E /* IMLocalize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMLocalize.h; sourceTree = "<group>"; };
 		F20E987F2FFED6461984A7F22DA8010F /* IMLocalize.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IMLocalize.modulemap; sourceTree = "<group>"; };
 		F4E78E82EC1E4D56EA918BD0F29A76E6 /* IMLocalize-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMLocalize-prefix.pch"; sourceTree = "<group>"; };
 		F8ED7C982B939BD173E0C12239210123 /* Pods_IMLocalize_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMLocalize_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3A66E89BAFB3C3D200252D73369D2E75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1FCD69FF40E0B7576A25E3A3A3E104 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B82AA47481DC248FB6810A51B921D72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,14 +90,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F38DC29B9EE378367173FF437D86138B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D40400B2C47068DC179ECA566D5FA76F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				723DC7744334C688DEE58FAAABEAE368 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,18 +118,10 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		3E51AC7A7A3040BF625F952174229701 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				2B96E3A3F7481C2D06BD7BE5150B922C /* ReplaceMe.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		45EB943EC60081705CAB8B6FE5FAB9BE /* IMLocalize */ = {
 			isa = PBXGroup;
 			children = (
-				D17A305C534173119239DCE2108B59E0 /* IMLocalize */,
+				A7F6DDA675962B8E2A20F980CC26A8CB /* IMLocalize */,
 				1409D53475BBE9B596727E8EAE6D75A4 /* Support Files */,
 			);
 			name = IMLocalize;
@@ -151,6 +147,14 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		A7F6DDA675962B8E2A20F980CC26A8CB /* IMLocalize */ = {
+			isa = PBXGroup;
+			children = (
+				E806442038C71CD653B3FDAE27198A7D /* Classes */,
+			);
+			path = IMLocalize;
+			sourceTree = "<group>";
+		};
 		AD8F5ECF3FF0842BF6BFD17A43884088 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,14 +172,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D17A305C534173119239DCE2108B59E0 /* IMLocalize */ = {
-			isa = PBXGroup;
-			children = (
-				3E51AC7A7A3040BF625F952174229701 /* Classes */,
-			);
-			path = IMLocalize;
-			sourceTree = "<group>";
-		};
 		E3F37CCFA8A3EB985E2161A9CD57A489 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +180,16 @@
 				72D8726F219FE68C5EDD8914A96E3B9B /* Pods_IMLocalize_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E806442038C71CD653B3FDAE27198A7D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DF11AFAEA41383AE489B3F96BF23E40E /* IMLocalize.h */,
+				C2A74E3792E34A1C0198B4C35DA170FB /* IMLocalizeManager.h */,
+				549D44C2084F2679D515E85FF2CE06A6 /* IMLocalizeManager.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		E9C82663EBF74601B32ED3230C5381B0 /* Pods-IMLocalize_Example */ = {
@@ -225,19 +231,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		41B5F5745D9C0EB9F45E0FD61C600DB6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7CC9A2DF662A71D1EA09011065B37B49 /* IMLocalize-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6A944318B3320BC97E5F4E8879213AE6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8EC126039AA0DE638511EB0104A2DEDB /* Pods-IMLocalize_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7D65C4C3E71C80F7D364443951C85C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7284BB9DF16F55EF401C9C349F5C05D1 /* IMLocalize-umbrella.h in Headers */,
+				D1098A594964B7FAF349AEB24653DFFB /* IMLocalize.h in Headers */,
+				9153D79A5EEAB59F0306872396BA3419 /* IMLocalizeManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,13 +278,13 @@
 			productReference = F8ED7C982B939BD173E0C12239210123 /* Pods_IMLocalize_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C3CA19525025F9D69ACF829AC0ADACB8 /* IMLocalize */ = {
+		B17CD2D6AA8C6207A8409EDA11B7A3FB /* IMLocalize */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4561AE42BB7356CAA104D03CE813CD73 /* Build configuration list for PBXNativeTarget "IMLocalize" */;
+			buildConfigurationList = 29811E8B8071A3730792E72DEED453D3 /* Build configuration list for PBXNativeTarget "IMLocalize" */;
 			buildPhases = (
-				C1CD3CFA0F147342DD25EDF9A77F55F8 /* Sources */,
-				D40400B2C47068DC179ECA566D5FA76F /* Frameworks */,
-				41B5F5745D9C0EB9F45E0FD61C600DB6 /* Headers */,
+				6DC31EB392C18781421332050F42C879 /* Sources */,
+				3A66E89BAFB3C3D200252D73369D2E75 /* Frameworks */,
+				9D7D65C4C3E71C80F7D364443951C85C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -325,7 +333,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C3CA19525025F9D69ACF829AC0ADACB8 /* IMLocalize */,
+				B17CD2D6AA8C6207A8409EDA11B7A3FB /* IMLocalize */,
 				979B8F91ADA651D38DBB1084F21B9FC6 /* Pods-IMLocalize_Example */,
 				F071C4D7B18E14C09641A62C4A5768F2 /* Pods-IMLocalize_Tests */,
 			);
@@ -341,20 +349,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6DC31EB392C18781421332050F42C879 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4135569F5D6D2F801DBD5154E988EC57 /* IMLocalize-dummy.m in Sources */,
+				3828D3F6ADFDD4C9E04CA322C0734A29 /* IMLocalizeManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CC55084BFADC8A457EFE470F0FDC81B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D60A31BDEA9E7D0C75F92A89FC5D5AD9 /* Pods-IMLocalize_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C1CD3CFA0F147342DD25EDF9A77F55F8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8F22C3A5BB8CA296D563B5B558C675DD /* IMLocalize-dummy.m in Sources */,
-				3F1738B1639C637655E123147F105319 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +372,7 @@
 		A316571AFF07F47A3B2A8034EC5C96D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IMLocalize;
-			target = C3CA19525025F9D69ACF829AC0ADACB8 /* IMLocalize */;
+			target = B17CD2D6AA8C6207A8409EDA11B7A3FB /* IMLocalize */;
 			targetProxy = C3F41C1BF9820DD6A1F2CDC9F5EE37F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -540,13 +548,13 @@
 			};
 			name = Release;
 		};
-		7D89389E12B984CDFE4C89B5C8FE9411 /* Release */ = {
+		AA18DC8841EBB83457B04609AFF6804D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AFE063C1EBAB3E1079BEE8F3F1B1C33C /* IMLocalize.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -559,7 +567,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/IMLocalize/IMLocalize.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = IMLocalize;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -567,7 +575,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -611,13 +619,13 @@
 			};
 			name = Debug;
 		};
-		F20146AB2FB4E8B863D2583AE40CD737 /* Debug */ = {
+		D5C3086BAFCFEFDB0EC1951C692C96B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AFE063C1EBAB3E1079BEE8F3F1B1C33C /* IMLocalize.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -630,7 +638,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/IMLocalize/IMLocalize.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = IMLocalize;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -638,25 +646,25 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		29811E8B8071A3730792E72DEED453D3 /* Build configuration list for PBXNativeTarget "IMLocalize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA18DC8841EBB83457B04609AFF6804D /* Debug */,
+				D5C3086BAFCFEFDB0EC1951C692C96B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
 				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4561AE42BB7356CAA104D03CE813CD73 /* Build configuration list for PBXNativeTarget "IMLocalize" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F20146AB2FB4E8B863D2583AE40CD737 /* Debug */,
-				7D89389E12B984CDFE4C89B5C8FE9411 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

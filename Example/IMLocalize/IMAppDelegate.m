@@ -8,11 +8,15 @@
 
 #import "IMAppDelegate.h"
 
+@import IMLocalize;//#import "IMLocalize.h"
+
 @implementation IMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[IMLocalizeManager shared] setup];
+
     return YES;
 }
 

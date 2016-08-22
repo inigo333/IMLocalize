@@ -19,8 +19,9 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 IMLocalize is used for localization inside your app.
-Set it up by just writing this line somewhere in your appDelegate: [[IMLocalizeManager shared] setup];
-and then use it all over your app by just writing IMLocalize(string_to_localize) where you would put the actual string.
+Import IMLocalize to appDelegate (or some other class before you actually want to localize a string for the first time): #import @IMLocalize;
+Set it up by just writing: [[IMLocalizeManager shared] setup];
+and then use it all over your app by just writing: IMLocalize(string_to_localize)
 e.g: self.label.text = IMLocalize(string_to_localize);
 DESC
 

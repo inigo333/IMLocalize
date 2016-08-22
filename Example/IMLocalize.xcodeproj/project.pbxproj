@@ -21,6 +21,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		630CCF3432FB8F9FA4E2F9F5 /* Pods_IMLocalize_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EFCA356F1B2BEEFF36CDCE /* Pods_IMLocalize_Tests.framework */; };
+		6AAE90EB1D6B2E16000250B0 /* en.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AAE90E81D6B2E16000250B0 /* en.json */; };
+		6AAE90EC1D6B2E16000250B0 /* es.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AAE90E91D6B2E16000250B0 /* es.json */; };
+		6AAE90ED1D6B2E16000250B0 /* fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AAE90EA1D6B2E16000250B0 /* fr.json */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		FDCFEC8075D2EC245EC7D7A2 /* Pods_IMLocalize_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F1546EFB4B233A59BFFF01 /* Pods_IMLocalize_Example.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +61,9 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		6AAE90E81D6B2E16000250B0 /* en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = en.json; path = json/en.json; sourceTree = "<group>"; };
+		6AAE90E91D6B2E16000250B0 /* es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = es.json; path = json/es.json; sourceTree = "<group>"; };
+		6AAE90EA1D6B2E16000250B0 /* fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = fr.json; path = json/fr.json; sourceTree = "<group>"; };
 		70A6585D8BBF407026FA3280 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7D00CBB2D1D95E311DBCFF60 /* Pods-IMLocalize_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMLocalize_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMLocalize_Tests/Pods-IMLocalize_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		84024FD7CBED60DE49416050 /* Pods-IMLocalize_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMLocalize_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMLocalize_Tests/Pods-IMLocalize_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 				6003F5A5195388D20070C39A /* IMViewController.h */,
 				6003F5A6195388D20070C39A /* IMViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6AAE90E71D6B2DFC000250B0 /* json */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for IMLocalize";
@@ -180,6 +187,16 @@
 				D3FFEB2C211D139241BAAF38 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		6AAE90E71D6B2DFC000250B0 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				6AAE90E81D6B2E16000250B0 /* en.json */,
+				6AAE90E91D6B2E16000250B0 /* es.json */,
+				6AAE90EA1D6B2E16000250B0 /* fr.json */,
+			);
+			name = json;
 			sourceTree = "<group>";
 		};
 		795AA17E40C9CF834498DBCD /* Pods */ = {
@@ -276,8 +293,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AAE90EC1D6B2E16000250B0 /* es.json in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				6AAE90ED1D6B2E16000250B0 /* fr.json in Resources */,
+				6AAE90EB1D6B2E16000250B0 /* en.json in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

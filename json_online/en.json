@@ -1,0 +1,9 @@
+{
+    "language_name": "English",
+    "language_identifier": "en",
+    "dog": "dog",
+    "cat": "cat",
+    "horse": "horse",
+    "home_navigation_welcome_tag" : "Welcome",
+    "hello_world_tag_online" : "Hello World!"
+}

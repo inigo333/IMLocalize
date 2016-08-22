@@ -8,6 +8,10 @@
 
 @import UIKit;
 
-@interface IMViewController : UIViewController
+@interface IMViewController : UIViewController < UIPickerViewDelegate, UIPickerViewDataSource >
+
+@property (nonatomic, strong) IBOutlet UILabel *label;
+@property (nonatomic, strong) IBOutlet UIImageView *imageView;
+@property (nonatomic, strong) IBOutlet UIPickerView *pickerView;
 
 @end

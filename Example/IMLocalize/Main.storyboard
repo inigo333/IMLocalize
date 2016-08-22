@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,12 +16,51 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o6c-8e-lBf">
+                                <rect key="frame" x="0.0" y="120" width="600" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="3Xi-6x-Ytu"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EnH-3a-mOi">
+                                <rect key="frame" x="0.0" y="320" width="600" height="280"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Localized string" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMn-QD-22n">
+                                <rect key="frame" x="0.0" y="20" width="600" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="685-JD-3Hs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o6c-8e-lBf" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="FL6-1Y-GSG"/>
+                            <constraint firstItem="gMn-QD-22n" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="FZf-hk-g3l"/>
+                            <constraint firstItem="EnH-3a-mOi" firstAttribute="top" secondItem="o6c-8e-lBf" secondAttribute="bottom" id="OcW-wR-QfM"/>
+                            <constraint firstItem="EnH-3a-mOi" firstAttribute="top" secondItem="o6c-8e-lBf" secondAttribute="bottom" id="P6a-7J-7ct"/>
+                            <constraint firstAttribute="trailing" secondItem="EnH-3a-mOi" secondAttribute="trailing" id="VMz-Ve-Fz8"/>
+                            <constraint firstItem="o6c-8e-lBf" firstAttribute="top" secondItem="gMn-QD-22n" secondAttribute="bottom" id="bWI-b5-yBt"/>
+                            <constraint firstAttribute="trailing" secondItem="o6c-8e-lBf" secondAttribute="trailing" id="ce8-Jk-Ofa"/>
+                            <constraint firstItem="gMn-QD-22n" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="kX4-8O-lJZ"/>
+                            <constraint firstItem="o6c-8e-lBf" firstAttribute="top" secondItem="gMn-QD-22n" secondAttribute="bottom" id="mao-8j-RN1"/>
+                            <constraint firstItem="EnH-3a-mOi" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="xWS-Az-s2P"/>
+                            <constraint firstAttribute="trailing" secondItem="gMn-QD-22n" secondAttribute="trailing" id="zQl-BX-686"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="EnH-3a-mOi" secondAttribute="bottom" id="zXK-A2-BDk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="o6c-8e-lBf" id="e8f-Tc-IeX"/>
+                        <outlet property="label" destination="gMn-QD-22n" id="0xt-cO-H7g"/>
+                        <outlet property="pickerView" destination="EnH-3a-mOi" id="BbE-56-miZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="574" y="416"/>
         </scene>
     </scenes>
 </document>
