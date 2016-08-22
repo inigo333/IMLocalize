@@ -22,7 +22,7 @@ pod "IMLocalize"
 
 ## Author
 
-Inigo Mato, inigo.mato@navenio.com
+Inigo Mato, inigo333@gmail.com
 
 ## License
 

@@ -1,0 +1,6 @@
+framework module IMLocalize {
+  umbrella header "IMLocalize-umbrella.h"
+
+  export *
+  module * { export * }
+}

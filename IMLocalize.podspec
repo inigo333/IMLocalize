@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'IMLocalize'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of IMLocalize.'
+  s.summary          = 'Localize your apps with just a line of code. Easy to setup (again, just one line)'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,18 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+IMLocalize is used for localization inside your app.
+Set it up by just writing this line somewhere in your appDelegate: [[IMLocalizeManager shared] setup];
+and then use it all over your app by just writing IMLocalize(string_to_localize) where you would put the actual string.
+e.g: self.label.text = IMLocalize(string_to_localize);
+DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/IMLocalize'
+  s.homepage         = 'https://github.com/inigo333/IMLocalize'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Inigo Mato' => 'inigo.mato@navenio.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/IMLocalize.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Inigo Mato' => 'inigo333@gmail.com' }
+  s.source           = { :git => 'https://github.com/inigo333/IMLocalize.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/inigo333'
 
   s.ios.deployment_target = '8.0'
 
