@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IMLocalize'
-  s.version          = '0.1.0'
+  s.version          = '1.0'
   s.summary          = 'Localize your apps with just a line of code. Easy to setup (again, just one line)'
 
 # This description is used to generate tags and improve search results.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 IMLocalize is used for localization inside your app.
 Import IMLocalize to appDelegate (or some other class before you actually want to localize a string for the first time): #import @IMLocalize;
-Set it up by just writing: [[IMLocalizeManager shared] setup];
+Set it up by just writing: [[IMLocalizeManager shared] setupWithUrlString:@"url_to_json_dictionaries"];
 and then use it all over your app by just writing: IMLocalize(string_to_localize)
 e.g: self.label.text = IMLocalize(string_to_localize);
 DESC
