@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IMLocalize_Example' do
+  pod 'IMLocalize', :path => '../'
+
+  target 'IMLocalize_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
