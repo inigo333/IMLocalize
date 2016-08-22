@@ -31,16 +31,23 @@
     NSInteger languageIndex = [allJSONFileNamesArray indexOfObject:jsonFileName];
     [self.pickerView selectRow:languageIndex inComponent:0 animated:NO];
     
-
-    
     [self updateLocalizedItems];
 }
 
 #pragma mark - Localization
 - (void)updateLocalizedItems
 {
+    //text
     self.label.text = IMLocalize(@"hello_world_tag_online");
     //self.label.text = IMLocalize(@"home_navigation_welcome_tag");
+
+    //images
+    NSString *imageUrl = [NSString stringWithFormat:@"https://raw.githubusercontent.com/inigo333/IMLocalize/master/json_online/image1_%@.jpg", [[IMLocalizeManager shared] languageIdentifierStored]];
+    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
+    dispatch_async(dispatch_get_main_queue(), ^
+                   {
+                       self.imageView.image = [UIImage imageWithData:imageData];
+                   });
 }
 
 #pragma mark - UIPickerView delegate+source methods
