@@ -7,7 +7,6 @@
 //
 
 #import "IMAppDelegate.h"
-
 @import IMLocalize;//#import "IMLocalize.h"
 
 @implementation IMAppDelegate
@@ -15,8 +14,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [[IMLocalizeManager shared] setup];
 
+    [[IMLocalizeManager shared] setupWithUrlString:@"https://raw.githubusercontent.com/inigo333/IMLocalize/master/json_online/"];
+    //https://raw.githubusercontent.com/inigo333/IMLocalize/master/json_online/en.json
+    //https://raw.githubusercontent.com/inigo333/IMLocalize/master/json_online/es.json
+    //https://raw.githubusercontent.com/inigo333/IMLocalize/master/json_online/fr.json
+    
     return YES;
 }
 

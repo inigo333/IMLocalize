@@ -19,7 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     //Setup picker view
     self.pickerView.delegate = self;
     self.pickerView.dataSource = self;
@@ -39,7 +39,8 @@
 #pragma mark - Localization
 - (void)updateLocalizedItems
 {
-    self.label.text = IMLocalize(@"home_navigation_welcome_tag");
+    self.label.text = IMLocalize(@"hello_world_tag_online");
+    //self.label.text = IMLocalize(@"home_navigation_welcome_tag");
 }
 
 #pragma mark - UIPickerView delegate+source methods

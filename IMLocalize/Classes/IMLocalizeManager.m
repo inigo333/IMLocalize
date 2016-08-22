@@ -10,6 +10,7 @@
 
 #define kIMLanguageDictionaryKey @"IMLanguageDictionary"
 #define kIMLanguageIdentifierKey @"IMLanguageIdentifier"
+#define kIMLanguageDictionaryURLKey @"IMLanguageDictionaryURLKey"
 
 
 static NSMutableDictionary *_missingTranslations;
@@ -37,8 +38,9 @@ static NSMutableDictionary *_missingTranslations;
 
 #pragma mark - language Setup
 
-- (void)setup
+- (void)setupWithUrlString:(NSString *)urlString
 {
+    [self saveObject:urlString forKey:kIMLanguageDictionaryURLKey];
     [self updateLanguageIdentifier:[self languageIdentifierPreferred]];
 }
 
@@ -77,6 +79,13 @@ static NSMutableDictionary *_missingTranslations;
     return languageDictionary;
 }
 
+- (NSDictionary *)languageDictionaryURLStored
+{
+    NSDictionary *languageDictionaryURL = [[NSUserDefaults standardUserDefaults] objectForKey:kIMLanguageDictionaryURLKey];
+    
+    return languageDictionaryURL;
+}
+
 - (NSArray *)allJSONFileNamesArray
 {
     NSArray *array = [self allFileNamesArray];
@@ -106,8 +115,7 @@ static NSMutableDictionary *_missingTranslations;
     self.languageIdentifier = languageIdentifier;
     [self updateDictionaryWithLanguageIdentifier:languageIdentifier];
     
-    NSString *callUrlString = [NSString stringWithFormat: @"https://privatejet.aerofi.com/api/gettextstrings?language=%@&company_identifier=pA3zw2BYJZB6uBvuUVDAGNJXR2zytikeXWWmQy5vBsf7yZt4Al7uGxodr30kMm&os_name=iOS&app_type=FULL&module_ver=0.1&app_ver=1.0&access_uid=1D0B880E-8213-4E42-913E-7EF644C60F6B", languageIdentifier];
-    
+    NSString *callUrlString = [NSString stringWithFormat:@"%@/%@.json", [self languageDictionaryURLStored], languageIdentifier];
     NSURL *url = [NSURL URLWithString:callUrlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSOperationQueue *queue = [NSOperationQueue mainQueue];
@@ -121,16 +129,11 @@ static NSMutableDictionary *_missingTranslations;
      {
          if(data && !error)
          {
-             NSDictionary* jsonResponse = [NSJSONSerialization JSONObjectWithData:data
+             NSDictionary* languageDictionary = [NSJSONSerialization JSONObjectWithData:data
                                                                           options:kNilOptions
-                                                                            error:&error];
-             
-             if([[jsonResponse objectForKey:@"result"] boolValue] == true)
-             {
-                 NSDictionary *languageDictionary = [jsonResponse valueForKeyPath:@"data.text_strings"];
-                 [self saveObject:languageDictionary forKey:kIMLanguageDictionaryKey];
-                 weakSelf.languageDictionary = languageDictionary;
-             }
+                                                                                  error:&error];
+             [self saveObject:languageDictionary forKey:kIMLanguageDictionaryKey];
+             weakSelf.languageDictionary = languageDictionary;
          }
          else
          {

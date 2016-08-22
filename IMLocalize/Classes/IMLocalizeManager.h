@@ -18,7 +18,8 @@
 
 + (NSDictionary *)missingTranslations;
 
-- (void)setup;
+- (void)setupWithUrlString:(NSString *)UrlString;
+
 - (NSString *)languageIdentifierPreferred;
 - (NSString *)languageIdentifierStored;
 - (void)updateLanguageIdentifier:(NSString *)languageIdentifier;
