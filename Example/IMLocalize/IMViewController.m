@@ -9,6 +9,7 @@
 #import "IMViewController.h"
 
 @import IMLocalize;
+#import "IMLocalize.h"
 
 @interface IMViewController ()
 
