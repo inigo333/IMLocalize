@@ -1,5 +1,5 @@
 PODS:
-  - IMLocalize (0.1.0)
+  - IMLocalize (1.1)
 
 DEPENDENCIES:
   - IMLocalize (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  IMLocalize: aa72134ddc9996f0dfdb954b366a0a3a9de27521
+  IMLocalize: 5e457ec5c5b86948e8785277aa8bcce44ce64f89
 
 PODFILE CHECKSUM: 9adc4656d48d061041c377c128b2a0827404d0ad
 
