@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 
+#import "IMLocalize.h"
 #import "IMLocalizeManager.h"
 
 FOUNDATION_EXPORT double IMLocalizeVersionNumber;

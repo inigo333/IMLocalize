@@ -7,7 +7,9 @@
 //
 
 #import "IMAppDelegate.h"
-@import IMLocalize;//#import "IMLocalize.h"
+
+@import IMLocalize;
+//#import "IMLocalize.h"
 
 @implementation IMAppDelegate
 
